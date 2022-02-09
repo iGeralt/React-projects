@@ -2,7 +2,8 @@ import React from "react";
 import millify from "millify";
 import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
-import {Cryptocurrencies, News} from './'
+import { Cryptocurrencies, News } from "./";
+import "antd/dist/antd.min.css";
 
 import { useGetCryptosQuery } from "../services/cryptoApi";
 
@@ -58,7 +59,7 @@ const HomePage = () => {
           <Link to="/cryptocurrencies">Show More</Link>
         </Title>
       </div>
-      <Cryptocurrencies simplified/>
+      <Cryptocurrencies simplified />
       <div>
         <Title level={2} className="home-title">
           Latest Crypto News
@@ -67,7 +68,7 @@ const HomePage = () => {
           <Link to="/News">Show More</Link>
         </Title>
       </div>
-      <News simplified/>
+      <News simplified />
     </>
   );
 };
